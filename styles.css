@@ -58,19 +58,30 @@ header h1 {
 
 .carsListBig {
   display: flex;
-  flex-direction: column;
-  height: 600px;
+
   justify-content: space-between;
   align-items: flex-end;
+}
+
+#carlist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
 }
 
 .carsListItem {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 750px;
 }
-
+#kautkas {
+  width: 50%;
+  height: 200px;
+}
+#kautkasparent {
+  display: flex;
+}
 .carsListItem h2 {
   margin-right: 30px;
 }
@@ -100,13 +111,14 @@ header h1 {
 }
 
 section h2 {
-  margin: 0 auto;
+  float: inline-end;
+  margin-bottom: 18px;
 }
 
 .enlarged-container {
   display: none;
   position: absolute;
-  top: 28%;
+  top: 180px;
   left: 55%;
   z-index: 1000;
   width: 600px;
